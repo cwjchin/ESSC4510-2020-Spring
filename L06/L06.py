@@ -30,6 +30,9 @@ pres_nEl = np.array([1010.9, 1011.2, 1011.9, 1011.2, 1011.1,
                     1012.0, 1011.4, 1010.9, 1011.5, 1011.0,
                     1011.2, 1012.5, 1011.1, 1011.8, 1010.6])
 n_years_nEl = len(pres_nEl)
+
+
+
 #========================================#
 
 # Carry out the Wilcoxon-Mann-Whitney test,
@@ -50,6 +53,9 @@ rainfall = np.array([43, 10, 4, 0, 2,
                     np.nan, 31, 0, 0, 0, 
                     2, 3, 0, 4, 15,
                     2, 0, 1, 127, 2])
+
+
+                    
 #========================================#
 
 # Resampling to produce the bootstraps,
@@ -65,7 +71,7 @@ rainfall = np.array([43, 10, 4, 0, 2,
 # Initializing an empty array filled with garbage values,
 # and output the computed skewness into it.
 bootstrap_size = 1000 # Change as you like.
-skewness_bootstrap = np.full([bootstrap_size], -999)
+skewness_bootstrap = np.full([bootstrap_size], -999.9)
 for t in np.arange(bootstrap_size):
     # Calculating the skewness.
     pass
